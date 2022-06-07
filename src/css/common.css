@@ -18,21 +18,67 @@ img {
   max-width: 100%;
 }
 
-.color-switcher-button{
+button{
   
-    background-color:#F3FFE2;
+  color: white;
+    background-color:#008CD9;
+  
     border: 1px solid ;
       border-radius: 16px;
     margin-bottom: 16px;
     margin-left: 25px;
   font-size: 18px;
   font-family: Inter, sans-serif;
-  padding: 20px 20px;
+  padding: 10px 10px;
   font-size: 20px;
   cursor: pointer;
-  width: 15%;}
-.wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 15%;
+  width: 135px;}
+
+button:disabled {
+  background-color: slategray;
 }
+    .timer {
+      display: flex;
+      margin-left: 15px;
+    }
+  
+    .timer .field {
+      margin-top: 10px;
+  
+      padding: 10px 10px;
+      border: 1px solid;
+      color: white;
+      background-color: #008CD9;
+    }
+  
+    span {
+      font-family: Inter,
+        sans-serif;
+      font-size: 30px;
+  
+    }
+  
+    .timer-input {
+      margin-left: 15px;
+      width: 250px;
+      height: 45px;
+      border-radius: 10px;
+      font-family: Inter,
+        sans-serif;
+      font-size: 18px;
+    }
+/*   
+    .timer-button {
+      color: white;
+      background-color: darkslateblue;
+      border: 1px solid;
+      border-radius: 16px;
+      margin-bottom: 16px;
+      margin-left: 15px;
+      font-size: 18px;
+      font-family: Inter, sans-serif;
+      padding: 8px 8px;
+      font-size: 20px;
+      cursor: pointer;
+      width: 15%;
+    } */
