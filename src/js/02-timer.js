@@ -34,7 +34,8 @@ flatpickr('#datetime-picker', options);
 
 refs.timerBtn.addEventListener('click', changeTimer);
  
-    function changeTimer() {
+function changeTimer() {
+       refs.timerBtn.disabled = true;
     const intervalId = setInterval(() => {
     const currentDate = Date.now();
     let alfaDate = chosenDate - currentDate;

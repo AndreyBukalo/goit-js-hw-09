@@ -36,7 +36,18 @@ button{
 
 button:disabled {
   background-color: slategray;
+  color: darkgray;
+  
 }
+
+ button:hover:disabled {
+  transform: scale(1);
+ }
+button:hover {
+  transform: scale(1.05);
+transition: scale, ease-out 0.5s;
+}
+
     .timer {
       display: flex;
       margin-left: 15px;
@@ -67,18 +78,10 @@ button:disabled {
         sans-serif;
       font-size: 18px;
     }
-/*   
-    .timer-button {
-      color: white;
-      background-color: darkslateblue;
-      border: 1px solid;
-      border-radius: 16px;
-      margin-bottom: 16px;
-      margin-left: 15px;
-      font-size: 18px;
-      font-family: Inter, sans-serif;
-      padding: 8px 8px;
-      font-size: 20px;
-      cursor: pointer;
-      width: 15%;
-    } */
+input {
+width: 125px;
+height: 30px;
+border-radius: 10px;
+font-family: Inter,sans-serif;
+font-size: 16px;
+}
