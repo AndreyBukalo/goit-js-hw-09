@@ -38,13 +38,19 @@ function changeTimer() {
        refs.timerBtn.disabled = true;
     const intervalId = setInterval(() => {
     const currentDate = Date.now();
-    let alfaDate = chosenDate - currentDate;
-    refs.days.textContent = convertMs(alfaDate).days;
-    refs.hours.textContent = convertMs(alfaDate).hours;
-    refs.minutes.textContent = convertMs(alfaDate).minutes;
-    refs.seconds.textContent = convertMs(alfaDate).seconds;
-  }, 1000);
-};
+      let alfaDate = chosenDate - currentDate;
+      if (alfaDate <= 0) {
+        clearInterval(intervalId)
+      }
+      else {
+        refs.days.textContent = convertMs(alfaDate).days;
+        refs.hours.textContent = convertMs(alfaDate).hours;
+        refs.minutes.textContent = convertMs(alfaDate).minutes;
+        refs.seconds.textContent = convertMs(alfaDate).seconds;
+      }
+      }
+  ,1000);
+}
 
     
 
